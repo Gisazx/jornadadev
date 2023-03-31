@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import VideoFooter from "./components/footer/VideoFooter"
 import "./video.css"
 
 function Video() {
@@ -26,11 +27,11 @@ function Video() {
         onClick={handleStart}
         loop
         src={require("../assets/brecker2.mp4")}
-        >
-
-        </video>
+        ></video>
+        {/* Side bar */}
+        <VideoFooter/>
     </div>
   )
 }
 
-export default Video
+export default Video;
