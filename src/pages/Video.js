@@ -3,7 +3,7 @@ import VideoFooter from "./components/footer/VideoFooter"
 import VideoSidebar from "./components/sidebar/VideoSidebar"
 import "./video.css"
 
-function Video({likes, messages, shares, name, description, music}) {
+function Video({likes, messages, shares, name, description, music, url}) {
     const videoRef = useRef(null)
     const [play, setPlay] = useState(false)
 
@@ -26,7 +26,8 @@ function Video({likes, messages, shares, name, description, music}) {
         ref={videoRef}
         onClick={handleStart}
         loop
-        src={require("../assets/brecker2.mp4")}
+        src={url}
+        //src={require("../assets/brecker2.mp4")}
         ></video>
 
         <VideoSidebar
