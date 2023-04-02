@@ -8,3 +8,7 @@
 .videoSidebar__options{
     padding: 10px;
 }
+
+.videoSidebar__options p {
+    text-align: center;
+}
